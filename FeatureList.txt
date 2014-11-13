@@ -1,13 +1,13 @@
-Features of the System (Prioritized)
-1.	Generates groups for class project. 
-2.	Can retrieve fundamental information from the university registrar.
-3.	Collects instructor’s and student’s information and preferences with regards to grouping.
-4.	Offers option for instructor to approve or modify final group listing.
-5.	Ensures Instructor’s preferences override student’s preferences where such conflicts arise.(part of the group generation method hence implemented as a part of use case 4)
-6.	Prompts instructor and student to enter their information and preferences.
-7.	Provides the option to edit previously entered information for both instructor and students.
-8.	Highlights conflicts that could not be resolved during group generation so that such conflicts are clear to instructor.(part of group generation method/ handled by group class and instructor may provide approval or modification input)
-9.	Notifies students of group listing once finalized by instructor.
-10.	System accounts for student’s schedules and preferences.(part of grouping algorithm hence implemented as a part of use case 1 and 6)
-11.	Capable of balancing groups in terms of skill for some projects given the students submit additional information.(part of group generation method hence implemented as a part of use case 1)
-
+Features of the System
+1. Generates groups for class project.
+2. Can retrieve fundamental information or allow manual input of information.
+3. Collects instructor’s and student’s information and preferences with regards to grouping.
+4. Offers option for instructor to approve or modify final group listing.
+5. Ensures Instructor’s preferences override student’s preferences where such conflicts arise.
+6. Prompts instructor and student to enter their information and preferences.
+7. Provides the option to edit previously entered information for both instructor and students.
+8. Highlights conflicts that could not be resolved during group generation so that such conflicts are clear to instructor.
+9. Notifies students of group listing once finalized by instructor.
+10. System accounts for student’s schedules and preferences.
+11. Capable of balancing groups in terms of skill for some projects given the students submit additional information.
+12. Handle creation of Projects.
