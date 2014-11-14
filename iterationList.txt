@@ -4,7 +4,7 @@ Week 1
 //what usecase and design it
 //maybe an alternate path
 //
-
+creating classlist and enabling instructor to manually make groups
 
 Week 2
 
