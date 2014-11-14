@@ -1,0 +1,15 @@
+Class
+_________________
+student.java
+classList.java
+studentArray.java
+schedule.java
+
+Group
+_________________
+group.java
+sortStudents.java
+
+Utilities
+_________________
+parameters.java
