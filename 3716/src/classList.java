@@ -1,4 +1,8 @@
 public class classList {
+	
+	/*
+	 * A change
+	 */
 	studentArray classList;
 
 	public void loadClass() {
