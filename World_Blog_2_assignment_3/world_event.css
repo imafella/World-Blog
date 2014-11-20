@@ -1,0 +1,129 @@
+@CHARSET "UTF-8";
+
+body
+{
+	background-color: #ccffff;
+	font-family: san-serif;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+	
+}
+
+h1, h2
+{
+	 font-weight: bold;
+}
+
+h1
+{
+	font-size: 1.5em;
+	margin-top: 34px;
+	margin-left: 20px;
+
+}
+
+h2
+{
+	font-size: 1.2em;
+	
+}
+#trash
+{
+	clear: both;
+}
+h2#center{
+	margin-left: auto;
+	margin-right:auto;	
+}
+
+div
+{
+	border-width: 1px;
+	border-style: groove;
+	border: solid black;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	background-color: #3333FF;
+	overflow: hidden;
+}
+
+#leavecomment{
+	
+	width:20%
+	margin-left: auto;
+}
+
+#backUp{
+	width: 153px;
+}
+
+div.min, div.max
+{
+	
+	overflow: hidden;
+	
+}
+div.min p, div.min input
+{
+	margin-top: 0px;
+	float: right;
+	clear: right;
+
+}
+.max
+{
+	width: 70%;
+	color: #CCFFCC;
+}
+
+.min
+{
+	width: 70%;
+	color: #ff9900;
+	float: right;
+}
+
+.min h2{
+	float:right;
+}
+
+div#comments
+{
+	float: right;
+	width:30%;
+}
+
+#posts
+{
+	overflow:hidden;
+	width:60%;
+	background-color: #ccffff;
+	border: hidden;
+
+}
+div#header
+{
+	overflow: hidden;
+}
+
+img#max, img#min{
+	width: 75px;
+}
+
+img#max
+{
+	float:right;
+}
+
+
+p#recDat
+{
+	float:right;
+}
+
+p.sub
+{
+	font-style: italic;
+}
