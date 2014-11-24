@@ -1,11 +1,14 @@
 /**
  * A regular Captain planet, saving all the global stuff.
  */
+var fs= require('fs');
+
 
 function saveIndex(index){
-	localStorage.setItem("index", JSON.stringify(index));
+	fs.writeFile('index.txt', index,function (err) {
+	  if (err) throw err;
+	  console.log('It\'s saved!');});
 }
-
 function getNewIndex(){
 	var index = getCurrentIndex()
 	index++;
@@ -14,7 +17,10 @@ function getNewIndex(){
 }
 
 function getCurrentIndex(){
-	var index = localStorage.getItem("index");
+	var index = fs.readFile('index.txt', function (err, data) {
+		  if (err) throw err;
+		  console.log(index);
+		});
 	
 	if(index == null || index == "")
 	{
@@ -45,7 +51,9 @@ function save(item)
 	}
 	var bloglistArray = getBlogArray(blogType);
 	bloglistArray.push(item);
-	localStorage.setItem(blogType, JSON.stringify(bloglistArray));
+	fs.writeFile(blogType+'.txt', JSON.stringify(blogListArray),function (err) {
+		  if (err) throw err;
+		  console.log('It\'s saved!');});
 }
 
 function loadPostList()
@@ -108,7 +116,10 @@ function getBlogArray(key)
 	 */
 	
 	
-	var blogListArray = localStorage.getItem(key);
+	var blogListArray = fs.readFile(key+'.txt', function (err, data) {
+		  if (err) throw err;
+		  console.log(key);
+		});;
 	if(blogListArray == null || blogListArray == "")
 	{
 		blogListArray = new Array();
