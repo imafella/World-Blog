@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+
+body
+{
+	background-color: red;
+	font-family: san-serif;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	font-size: 250%;
+}
+
+h1, h2
+{
+	 font-weight: bold;
+}
+
+h1
+{
+	font-size: 1.5em;
+	margin: 0px auto 0px auto;
+
+}
+
+h2
+{
+	font-size: 1.2em;
+	
+}
+
+div
+{
+	border-width: 1px;
+	border-style: groove;
+	border: solid black;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	background-color: #3333FF;
+}
+
+div.min, div.max
+{
+	
+	overflow: hidden;
+	width: 70%;
+	
+}
+
+.max
+{
+	color: #CCFFCC;
+}
+
+.max img
+{
+	float: right;
+}
+
+.min h2{
+	float: right;
+}
+
+div.min p, div.min input
+{
+	margin-top: 0px;
+	float: right;
+	clear: right;
+
+}
+
+.min
+{
+	float: right;
+	color: #ff9900;
+}
+
+#posts
+{
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+}
+#posts input
+{
+	width: 200px;
+}
+#posts img
+{
+	width: 70px;
+}
+
+p#recDat
+{
+	float:right;
+}
+
+p.sub
+{
+	font-style: italic;
+}
+
+#leavecomment input, #leavecomment textarea, #leavecomment select
+{
+	font-size: 70%;
+	width: 400px;
+}
+#leavecomment textarea
+{
+	margin-bottom: 20px;
+	height: 100px;
+}
+
+#comments input
+{
+	font-size: 100%;
+	width: 200px;
+}
+#comments div
+{
+	overflow: hidden;
+	position: relative;
+}
