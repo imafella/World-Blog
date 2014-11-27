@@ -1,43 +1,48 @@
-var http = require('http');
-var fs = require('fs');
-var path = require('path');
-http.createServer(function (request, response) {
-    console.log('request starting...');
+var http = require("http");
+var url = require("url");
+// This was added
+
+function start(route, handle) 
+{
+
+	function onRequest(request, response)
+	{
 	
-	var filePath = '.' + request.url;
-	if (filePath == './')
-		filePath = './index.html';
+		// This was added
+		var filepath = '.' + request.url; // Now pass to the router
 		
-	var extname = path.extname(filePath);
-	var contentType = 'text/html';
-	switch (extname) {
-		case '.js':
-			contentType = 'text/javascript';
-			break;
-		case '.css':
-			contentType = 'text/css';
-			break;
+		
+		
+		
+		//var pathname = url.parse(request.url).pathname;
+		
+		console.log("Request for " + filepath +  " Received");
+		// Is the request portion needed
+		// not sure what this is doing request.setEncoding("utf8");
+		
+			
+		
+		
+		/*request.addListener("data", function(postDataChunk) 
+		{ 
+			postData += postDataChunk;
+			console.log("Received POST data chunk '"+ postDataChunk + "'.");
+		});
+		
+		request.addListener("end", function() 
+		{
+			route(handle, pathname, response, postData);
+		});
+		*/
+		
+		// changed pathname to filepath
+		route(handle, filepath, response);
+		
 	}
-	
-	path.exists(filePath, function(exists) {
-	
-		if (exists) {
-			fs.readFile(filePath, function(error, content) {
-				if (error) {
-					response.writeHead(500);
-					response.end();
-				}
-				else {
-					response.writeHead(200, { 'Content-Type': contentType });
-					response.end(content, 'utf-8');
-				}
-			});
-		}
-		else {
-			response.writeHead(404);
-			response.end();
-		}
-	});
-	
-}).listen(8125);
-console.log('Server running at http://127.0.0.1:8125/');
+		
+	http.createServer(onRequest).listen(8888);
+
+	console.log("Server has started");
+}
+
+exports.start = start;
