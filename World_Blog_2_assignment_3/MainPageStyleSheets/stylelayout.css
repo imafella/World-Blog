@@ -1,0 +1,128 @@
+body{
+	font-size: small;
+	margin: 0px;
+}
+
+#header{
+	margin: 10px;
+	height: 120px;	
+	border: 5px solid black;
+}
+
+tableContainer{
+	display: table;
+}
+
+tableRow{
+	display: table-row;
+	
+}
+/* This needs to change depending on device!!*/
+#allcontent{
+	width: 800px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo{
+	display: table-cell;
+	vertical-align: top;
+}
+
+#mainhead {
+	display:table-cell;
+	vertical-align: middle;
+	font-size: 200%;
+	padding: 15px;
+    font-style: italic;
+}
+
+#bloggers{
+	display: table-cell;
+	vertical-align: top;
+	font-size: 120%;
+	padding: 0px 15px 0px 215px;
+	
+	
+}
+#bloggers h3{
+	text-decoration: underline;
+	padding:10px 0px 0px 0px;
+	margin:0px;
+}
+/* NEED TO CHANGE LOCATION OF ICON*/
+
+#bloggers li {
+	 font-style: italic;
+	 font-weight: bold;
+	 text-indent: 10px;
+	 line-height: 1.5em;
+	 
+	}
+
+
+#Events{
+	font-size: 140%;
+	padding: 0px 15px 15px 15px;
+	margin: 0px 10px 10px 10px;
+	width:250px;
+	float:left;	
+	border: 5px solid black;
+	border-radius: 15px;
+	line-height: 1.8em;
+}
+
+#Events h3{
+	text-decoration: underline;
+	text-align: center;
+}
+
+#profiles{
+	padding: 0 15px 15px 15px;
+	margin: 0px 0px 0px 300px;
+	
+}
+
+#profiles h3{
+	text-decoration: underline;
+	font-size: 140%;
+}
+	
+	
+.profile{
+	line-height: 1.9em;
+	font-weight: bold; 
+	border-style: solid;
+	border-color: black;
+	border-width: 5px; 
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+
+
+.imgProfile{
+	width: 70px;
+	float: right;
+}
+.proPara{
+	clear: right;
+}	
+
+#footer{
+	text-align: center;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+	font-size: 90%;
+	border: 5px solid black;
+}
+
+a:link{
+	text-decoration: none;
+	border-bottom: thin dotted black;
+}
+
+a:visited {
+	text-decoration: underline;
+}

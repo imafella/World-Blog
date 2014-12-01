@@ -1,0 +1,70 @@
+@font-face {
+	font-family: "logoCursive";
+	src: url("logofont/logoCursive.ttf);
+}
+body{
+	background-color: #ADFF2F;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h2, h3{
+	color: black;
+}
+
+#header{
+	background-color: #008000;
+}
+
+#date{
+padding: 50px 15px 15px 220px;
+}
+
+#mainhead{
+	font-family: "logoCursive", serif;
+}
+
+#addContent{
+font-family: "logoCursive", serif;
+font-style: italic;
+background-image: url("../photos/bgi.jpg");
+font-weight: bolder;
+}
+
+#info{
+	background-color: #008000;
+}
+
+#comments{
+	background-color: #008000;
+}
+
+.for {
+	background-color: #008000;
+}
+
+.against{
+	background-color: #808000;
+}
+
+#footer{
+	background-color: #008000;
+}
+
+a:link{
+	color: maroon;
+}
+
+a:visited {
+	color: black;
+	
+}
+
+a:hover {
+	background: maroon;
+	color: black;
+}
+
+#logo a:hover{
+	background:none;
+	border-bottom: none;
+}

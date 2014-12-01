@@ -1,0 +1,168 @@
+@font-face {
+	font-family: "logoCursive";
+	src: url("logofont/logoCursive.ttf);
+}
+body{
+	background-color: #ADFF2F;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: small;
+	margin: 0px;
+}
+
+/* This needs to change depending on device!!*/
+#allContent{
+	width: 800px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3{
+	color: black;
+}
+
+#header{
+	background-color: #008000;
+	margin: 10px;
+	height: 120px;	
+	border: 5px solid black;
+}
+
+tableContainer{
+	display: table;
+}
+
+tableRow{
+	display: table-row;
+}
+
+#logo{ 
+	display: table-cell;
+	vertical-align: top;
+	
+	
+}
+
+#mainhead{
+	display:table-cell;
+	vertical-align: middle;
+	font-size: 200%;
+	padding: 15px;
+	font-family: "logoCursive", serif;
+	font-style: italic;
+	
+}
+
+#date{
+	display: table-cell;
+	font-size: 120%;
+	padding: 50px 15px 15px 220px;
+	text-align: right;
+	line-height: 1.5em;
+	
+}
+
+#info{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 5px solid black;
+	border-radius: 15px;
+	background-color: #008000;
+	padding: 0px 5px 5px 5px;
+}
+
+#info h2{
+	text-decoration: underline;
+}
+
+#info p{
+	font-size: 120%;
+	line-height: 1.5em;
+}
+
+#info img{
+	border: 2px solid black;
+}
+
+#comments{
+	
+	background-color: #008000;
+	font-size: 110%;
+	padding: 15px;
+	margin: 10px 10px 10px 10px;
+	width:250px;
+	float:right;	
+	border: 5px solid black;
+	border-radius: 15px;
+	line-height: 1.8em;
+	
+}
+
+#comments h2{
+	text-decoration: underline;
+	text-align: center;
+}
+
+.for {
+	border: 5px solid black;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 10px 350px 10px 40px;
+	background-color: #008000;
+	line-height: 1.5em;
+	font-style: italic;
+	font-size: 110%;
+	
+	
+	
+}
+
+.against{
+	
+	border: 5px solid black;
+	border-radius: 15px;
+	padding:15px;
+	background-color: #808000;
+	margin: 10px 305px 10px 75px;
+	line-height: 1.5em;
+	font-style: italic;
+	font-size: 110%;
+	
+	
+}
+
+.profileNames{
+	font-size: 140%;
+
+}
+
+#footer{
+	background-color: #008000;
+	text-align: center;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+	font-size: 90%;
+	border: 5px solid black;
+	
+}
+
+a:link{
+	color: maroon;
+	text-decoration: none;
+	border-bottom: thin dotted maroon;
+}
+
+a:visited {
+	color: black;
+	text-decoration: underline;
+	
+}
+
+a:hover {
+	background: maroon;
+	color: black;
+}
+

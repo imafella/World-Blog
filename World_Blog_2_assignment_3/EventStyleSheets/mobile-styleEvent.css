@@ -1,0 +1,67 @@
+body{
+	background-color: #FF8C00;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: white;
+}
+
+h1, h2, h3{
+	color: white;
+}
+
+#header{
+	background-color: #00008B;
+}
+
+#info{
+	background-color: #00008B;
+}
+
+#date{
+padding: 0px 15px 15px 220px;
+}
+
+
+#addContent{
+font-style: italic;
+background-color: red;
+font-weight: bolder;
+}
+
+#comments{
+	background-color: #00008B;
+}
+
+.for {
+	background-color: #00008B;
+}
+
+.against{
+	background-color: #6495ED;
+	color:black;
+}
+
+#footer{
+	background-color: #00008B;
+}
+
+a:link{
+	color: white;
+	text-decoration: none;
+	border-bottom: thin dotted white;
+}
+
+a:visited {
+	color: black;
+	text-decoration: underline;
+	
+}
+
+a:hover {
+	background: white;
+	color: black;
+}
+
+#logo a:hover{
+	background: none;
+	border-bottom: none;
+}

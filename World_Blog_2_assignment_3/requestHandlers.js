@@ -1,11 +1,23 @@
 
 var querystring = require("querystring"),
 	fs = require("fs");
+// Not sure if this is going to stay!!	
 
 
-function start(response,contentType,filepath)
-{
-	console.log("Request handler 'start' was called.");
+// I could put a internal function here so we don't actually lose the path on the condition
+// There is some postData
+function start(response,contentType,filepath, postData) 
+{	
+
+	
+    var testString = postData.trim();	
+	if(testString.length != 0 && !testString.match(/(postContent=\+*$)/g)) 
+	// Meaning that someone actually posted something of relevance.
+	{
+		
+		post(postData, filepath);
+	}
+	
 	fs.readFile(filepath, function(error, content)
 			{
 				if(error) 
@@ -21,28 +33,56 @@ function start(response,contentType,filepath)
 				
 			});
 }
-/*
-function upload(response)
 
+
+
+function post(postData, filepath)
 {
-	console.log("Request handler 'upload' was called.");
-	response.writeHead(200, {"Content-Type": "text/plain"});
-	response.write("You've sent the text: " + querystring.parse(postData).text);
-	response.end();
 	
+	var saveFile = null; // Start off with nothing
+	
+	//Now we figure out what file to save it to
+	
+	if(filepath == "./events/palestine.html")
+	{
+		saveFile = "palestine.txt";
+	}
+	else if(filepath == "./events/egypt.html")
+	{
+		saveFile = "egypt.txt";
+	}
+	else if(filepath == "./events/iraq.html")
+	{
+		saveFile = "iraq.txt";
+	}
+	else
+	{
+		saveFile = "syria.txt";
+	}
+	console.log("Here is what you posted " + postData);
+	// we are now going to break down postData to give three things if applicable 
+	var section = querystring.parse(postData).Section;
+	
+	console.log("You Selected the section: " + section);
+	
+	var commenterName = querystring.parse(postData).CommentName;
+	
+	console.log("commenterName is: " + commenterName);
+	
+	var postContent = querystring.parse(postData).postContent;
+	console.log("Here is the post: " + postContent);
+	
+	fs.appendFile(saveFile, section +":" + commenterName +":"+ postContent + "*&!@*" , function(err)
+	{
+		if (err)
+		{
+			console.log("It seems we have hit an error");
+			throw err;
+		}
+		//console.log("Data has been appended y'all");
+	});
 }
 
-function show(response) 
-{
-
-	console.log("Request handler 'show' was called.");
-	response.writeHead(200, {"Content-Type": "image/png"});
-	fs.createReadStream("tmp/test.png").pipe(response);
-}
-*/
 exports.start = start;
-/*
-exports.upload = upload;
-exports.show = show;
-*/
+
 

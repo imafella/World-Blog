@@ -1,0 +1,50 @@
+@font-face {
+	font-family: "logoCursive";
+	src: url("logofont/logoCursive.ttf);
+}
+body{
+	background-color: #ADFF2F;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h2, h3{
+	color: black;
+}
+
+#header{
+	background-color: #008000;
+}
+
+#mainhead {	
+	font-family: "logoCursive", serif;
+}
+
+
+#bloggers ul{
+	list-style-image: url('logo/listicon.jpg');
+}
+
+#Events{	
+	background-color: #008000;
+}
+	
+.profile{ 
+	background-color: #008000;
+}
+
+#footer{
+	background-color: #008000;
+}
+
+a:link{
+	color: maroon;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	background: maroon;
+	color: black;
+}

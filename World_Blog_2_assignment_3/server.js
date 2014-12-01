@@ -10,33 +10,27 @@ function start(route, handle)
 	
 		// This was added
 		var filepath = '.' + request.url; // Now pass to the router
+		var postData = ""; // For now we have an empty string
 		
-		
-		
-		
-		//var pathname = url.parse(request.url).pathname;
-		
-		console.log("Request for " + filepath +  " Received");
+		//console.log("Request for " + filepath +  " Received");
 		// Is the request portion needed
 		// not sure what this is doing request.setEncoding("utf8");
 		
-			
+		request.setEncoding("utf8"); // Sets encoding to utf-8888
+
 		
 		
-		/*request.addListener("data", function(postDataChunk) 
+		
+		request.addListener("data", function(postDataChunk) 
 		{ 
 			postData += postDataChunk;
-			console.log("Received POST data chunk '"+ postDataChunk + "'.");
 		});
 		
 		request.addListener("end", function() 
 		{
-			route(handle, pathname, response, postData);
+			route(handle, filepath, response, postData);
 		});
-		*/
 		
-		// changed pathname to filepath
-		route(handle, filepath, response);
 		
 	}
 		

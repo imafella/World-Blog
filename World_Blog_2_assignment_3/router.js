@@ -1,8 +1,9 @@
 var path = require('path');
-function route(handle, filepath, response) 
+function route(handle, filepath, response, postData) 
 {
 	// Check to make sure that the file path exists!
-	console.log("About to route a request for " + filepath);
+	 
+	//console.log("About to route a request for " + filepath);
 	var extname = path.extname(filepath);
 	
 	// Not sure if this should be in this file
@@ -26,7 +27,8 @@ function route(handle, filepath, response)
 		{
 			// Now we sent this to the requestHandler
 			// need to also send the contentType!!
-			handle['/'](response, contentType, filepath);
+			
+			handle['/'](response, contentType, filepath, postData);
 			
 		}
 		else
