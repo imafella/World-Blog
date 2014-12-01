@@ -3,7 +3,7 @@
 	src: url("logofont/logoCursive.ttf);
 }
 body{
-	background-color: #ADFF2F;
+	background-color: #CC9900;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -12,7 +12,7 @@ h1, h2, h3{
 }
 
 #header{
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 
 #mainhead {	
@@ -20,20 +20,16 @@ h1, h2, h3{
 }
 
 
-#bloggers ul{
-	list-style-image: url('logo/listicon.jpg');
-}
-
 #Events{	
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 	
 .profile{ 
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 
 #footer{
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 
 a:link{

@@ -3,7 +3,7 @@
 	src: url("logofont/logoCursive.ttf);
 }
 body{
-	background-color: #ADFF2F;
+	background-color: #CC9900;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -12,7 +12,7 @@ h1, h2, h3{
 }
 
 #header{
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 
 #date{
@@ -31,23 +31,23 @@ font-weight: bolder;
 }
 
 #info{
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 
 #comments{
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 
 .for {
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 
 .against{
-	background-color: #808000;
+	background-color: #FFCC00;
 }
 
 #footer{
-	background-color: #008000;
+	background-color: #00CCFF;
 }
 
 a:link{
