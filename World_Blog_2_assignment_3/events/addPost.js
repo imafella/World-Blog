@@ -5,19 +5,19 @@ window.onload = function()
 	
 	if(check == "syria.html")
 	{
-		file = "../syria.txt";
+		file = "../SaveData/syria.txt";
 	}
 	else if (check == "egypt.html")
 	{
-		file = "../egypt.txt";
+		file = "../SaveData/egypt.txt";
 	}
 	else if (check == "palestine.html")
 	{
-		file = "../palestine.txt";
+		file = "../SaveData/palestine.txt";
 	}
 	else
 	{
-		file = "../iraq.txt";
+		file = "../SaveData/iraq.txt";
 	}
 	var rawFile = new XMLHttpRequest();
 	rawFile.open("GET", file, false);

@@ -45,19 +45,19 @@ function post(postData, filepath)
 	
 	if(filepath == "./events/palestine.html")
 	{
-		saveFile = "palestine.txt";
+		saveFile = "SaveData/palestine.txt";
 	}
 	else if(filepath == "./events/egypt.html")
 	{
-		saveFile = "egypt.txt";
+		saveFile = "SaveData/egypt.txt";
 	}
 	else if(filepath == "./events/iraq.html")
 	{
-		saveFile = "iraq.txt";
+		saveFile = "SaveData/iraq.txt";
 	}
 	else
 	{
-		saveFile = "syria.txt";
+		saveFile = "SaveData/syria.txt";
 	}
 	console.log("Here is what you posted " + postData);
 	// we are now going to break down postData to give three things if applicable 
